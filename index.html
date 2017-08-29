@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Film Festival</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+          integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/font-awesome.css">
+    <link rel="stylesheet" href="css/bootstrap-social.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="../../Downloads/4-building-forms-with-bootstrap/5-custom-css/final/css/custom.css">
+
+</head>
+<body id="home" data-spy="scroll" data-target="#main-nav" data-offset="100">
+
+<!-- navbar -->
+<nav id="main-nav" class="sticky-top bg-light">
+    <div class="container px-0 d-flex justify-content-start">
+        <div class="mr-auto p-2 flex-sm-wrap">
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#films">Films</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#schedule">Schedule</a>
+                </li>
+            </ul>
+        </div>
+        <div class="ml-auto p-2 d-none d-md-block">
+            <p class="navbar-brand">August 5th - 8th: Brooklyn Bridge Park</p>
+        </div>
+    </div>
+</nav>
+
+
+<!--jumbotron -->
+<div class="jumbotron-bg-image">
+    <div class="jumbotron jumbotron-fluid  bg-warning">
+        <div class="container text-center">
+            <h1 class="display-3">Brooklyn Outdoor Film Festival</h1>
+            <p class="lead">Films that appeal to audiences of all ages</p>
+            <div class="btn-group" role="group">
+                <button type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#registerModal">
+                    Don't miss out - Register Now!!
+                </button>
+                <a href="#films">
+                    <button type="button" class="btn btn-dark btn-lg d-none d-sm-block" href="#films">See Films</button>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--main container -->
+<div class="container">
+    <!--about -->
+    <h1 id="about" class="display-4 text-center mb-5 text-muted">About</h1>
+    <div class="info row mb-5">
+        <div class="col-12 col-lg-4 order-lg-1 mb-5">
+            <h3 class="mb-4">Outdoor Film Festival</h3>
+            <img src="img/bg-cinema.jpg" class="img-fluid rounded d-none d-sm-block mb-2" alt="Film Festival">
+            <p>Outdoor Film Festival in the heart of Brookyln. Brooklyn Bridge Park this year from August 5th through
+                8th, from 6pm to midnight. Don't miss this amazing event</p>
+        </div>
+        <div class="col-12 col-lg-4 mb-5">
+            <h3 class="mb-4">For Everyone</h3>
+            <p>It doesn't matter who you are or how old you are. Everyone will enjoy our films</p>
+            <p>And of course they are free and open to everyone!!!! All we ask is that you pre-register for this event.
+                No credit card details required</p>
+            <p>You can register as many people as you like so bring your family and friends to this one and only
+                event.</p>
+            <button type="button" class="btn btn-danger btn-lg d-flex m-auto" data-toggle="modal"
+                    data-target="#registerModal">Register Now!!
+            </button>
+
+        </div>
+        <div class="col-12 col-lg-4 order-lg-2 mb-5">
+            <h3 class="mb-4">News</h3>
+            <ul class="list-group">
+                <li class="list-group-item"><strong>15 June: </strong>200 tickets registered</li>
+                <li class="list-group-item"><strong>27 June: </strong>Tom Hardy will be attending</li>
+                <li class="list-group-item"><strong>01 July: </strong>Free popcorn on Friday</li>
+                <li class="list-group-item"><strong>11 July: </strong>See the new Spiderman Trailer</li>
+                <li class="list-group-item"><strong>14 July: </strong>Prizes to be given</li>
+                <li class="list-group-item"><strong>22 July: </strong>8th August nearly sold out</li>
+            </ul>
+        </div>
+    </div>
+    <!-- film page -->
+    <h1 id="films" class="display-4 text-center mb-5 text-muted">Films</h1>
+
+    <div class="card-deck mb-4">
+        <div class="card">
+            <img class="card-img-top" src="img/captain-naweb.jpeg" alt="Card image cap">
+            <div class="card-body">
+
+                <h4 class="card-title">Captain Naweb</h4>
+                <p class="card-text">Gripping film about Captian Naweb and all his crew aboard the ship.</p>
+            </div>
+            <div class="card-footer">
+                <a href="#" class="btn btn-info mx-auto center-block">more info...</a>
+            </div>
+
+        </div>
+
+
+        <div class="card">
+            <img class="card-img-top" src="img/dragons.jpeg" alt="Card image cap">
+            <div class="card-body">
+                <h4 class="card-title">Dragons</h4>
+                <p class="card-text">How to kill a dragon is back with this great family movie.</p>
+            </div>
+            <div class="card-footer">
+                <a href="#" class="btn btn-info mx-auto center-block">more info...</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img class="card-img-top" src="img/marvel.jpeg" alt="Card image cap">
+            <div class="card-body">
+                <h4 class="card-title">Marvel Adventures</h4>
+                <p class="card-text">The adventures are back yet again with Marvel and all those amazing action
+                    heroes.</p>
+            </div>
+            <div class="card-footer">
+                <a href="#" class="btn btn-info mx-auto center-block">more info...</a>
+            </div>
+        </div>
+    </div>
+    <div class="card-deck">
+        <div class="card">
+            <img class="card-img-top" src="img/mom.jpeg" alt="Card image cap">
+            <div class="card-body">
+                <h4 class="card-title">Mom Teaser</h4>
+                <p class="card-text">Japanese film about Mom and what she had to do to survive the life she had to
+                    survive.</p>
+            </div>
+            <div class="card-footer">
+                <a href="#" class="btn btn-info mx-auto center-block">more info...</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img class="card-img-top" src="img/notebook.jpeg" alt="Card image cap">
+            <div class="card-body">
+                <h4 class="card-title">The Notebook</h4>
+                <p class="card-text">Amazing film about a notebook and the effect it can have on your life and those
+                    around you.</p>
+            </div>
+            <div class="card-footer">
+                <a href="#" class="btn btn-info mx-auto center-block">more info...</a>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="img/world-war-2.jpeg" alt="Card image cap">
+            <div class="card-body">
+                <h4 class="card-title">World War 2</h4>
+                <p class="card-text">The world war like you have never seen it before.</p>
+
+
+            </div>
+            <div class="card-footer">
+                <a href="#" class="btn btn-info mx-auto center-block">more info...</a>
+            </div>
+        </div>
+    </div>
+    <!--shedule page -->
+    <div id="schedule" class="col schedule">
+        <h1 class="display-4  text-center  mb-5 text-muted">Schedule</h1>
+        <ul class=" list-group mb-4">
+            <li class="list-group-item d-flex bg-light">
+                <img src="img/dragons.jpeg" alt="Dragons"/>
+                <div class="d-flex film">
+                    <h4 class="list-group-heading">Dragons</h4>
+                    <span>Family Movie</span>
+                </div>
+                <span class="badge badge-dark badge-pill">5 August 18:00</span>
+            </li>
+            <li class="list-group-item d-flex">
+                <img src="img/captain-naweb.jpeg" alt="Captain Naweb"/>
+                <div class="d-flex film">
+                    <h4 class="list-group-heading">Captain Naweb</h4>
+                    <span>Drama</span>
+                </div>
+                <span class="badge badge-dark badge-pill">5 August 22:00</span>
+            </li>
+            <li class="list-group-item bg-light d-flex">
+                <img src="img/marvel.jpeg" alt="Marvel Adventures"/>
+                <div class="d-flex film">
+                    <h4 class="list-group-heading">Marvel Adventures</h4>
+                    <span>Adventure</span>
+                </div>
+                <span class="badge badge-dark badge-pill">6 August 18:00</span>
+            </li>
+            <li class="list-group-item d-flex">
+                <img src="img/mom.jpeg" alt="Mom Teaser"/>
+                <div class="d-flex film">
+                    <h4 class="list-group-heading">Mom Teaser</h4>
+                    <span>Drama</span>
+                </div>
+                <span class="badge badge-dark badge-pill">7 August 18:00</span>
+            </li>
+            <li class="list-group-item bg-light d-flex">
+                <img src="img/notebook.jpeg" alt="The notebook"/>
+                <div class="d-flex film">
+                    <h4 class="list-group-heading">The Notebook</h4>
+                    <span>Drama</span>
+                </div>
+                <span class="badge badge-dark badge-pill">7 August 22:00</span>
+            </li>
+            <li class="list-group-item d-flex">
+                <img src="img/world-war-2.jpeg" alt="World War 2"/>
+                <div class="d-flex film">
+                    <h4 class="list-group-heading">World War 2</h4>
+                    <span>Adventure</span>
+                </div>
+                <span class="badge badge-dark badge-pill">8 August 18:00</span>
+            </li>
+        </ul>
+        <button type="button" class="btn btn-danger btn-lg d-flex m-auto" data-toggle="modal"
+                data-target="#registerModal">Don't miss out - Register Now!!
+        </button>
+
+    </div>
+
+
+</div><!-- /container -->
+
+<!-- footer -->
+<footer class="">
+    <hr>
+    <!--footer big -->
+    <div class="container">
+        <div class="row py-4 text-muted justify-content-between">
+            <div class="col-12 col-lg-5">
+                <p><strong>About Film Festival</strong></p>
+                <p>An amazing opportunity to see films out in the open air in the middle of New York City</p>
+            </div>
+
+            <div class="col-12 col-lg-5">
+                <p><strong>Stay up to date on what's going on</strong></p>
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Enter your email for info...">
+                    <span class="input-group-btn">
+						<button class="btn btn-info" type="button">Sign up</button>
+                </span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <hr>
+    <!--footer small -->
+    <nav class="">
+        <div class="container px-0 d-flex justify-content-start">
+            <div class="mr-auto p-2 flex-sm-wrap">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Terms and Conditons</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://www.nydailynews.com/new-york/brooklyn">Brooklyn’s news</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.brooklynbridgepark.org/">Brooklyn Bridge Park</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="ml-auto p-2 d-none d-md-block">
+                <a href="https://twitter.com/" class="btn btn-social-icon btn-twitter">
+                    <span class="fa fa-twitter"></span>
+                </a>
+                <a href="https://www.instagram.com/" class="btn btn-social-icon btn-instagram">
+                    <span class="fa fa-instagram"></span>
+                </a>
+                <a href="https://www.facebook.com/" class="btn btn-social-icon btn-facebook">
+                    <span class="fa fa-facebook"></span>
+                </a>
+
+            </div>
+        </div>
+    </nav>
+</footer>
+
+
+<!-- Modal -->
+<div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="Register" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Register for Brooklyn Outdoor Film Festival</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <strong>Just Register!</strong> It's totally free.
+                </div>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="email" class="form-control" id="name" placeholder="John Doe">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email address</label>
+                        <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="film">Choose a Film</label>
+                        <select class="form-control" id="film">
+                            <option>Dragons</option>
+                            <option>Captain Naweb</option>
+                            <option>Marvel Adventures</option>
+                            <option>Mom Teaser</option>
+                            <option>The Notebook</option>
+                            <option>World War 2</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="tickets">How Many Tickets</label>
+                        <select class="form-control" id="tickets">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea class="form-control" id="message" rows="3"></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-danger">Register</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+        integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
+        integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+        crossorigin="anonymous"></script>
+</body>
+</html>

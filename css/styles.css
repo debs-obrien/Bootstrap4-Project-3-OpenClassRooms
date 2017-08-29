@@ -1,0 +1,118 @@
+.fa-twitter:before, .fa-instagram:before, .fa-facebook:before {
+    color: #fff;
+    cursor: pointer;
+}
+
+.card-img-top {
+    max-height: 144px;
+}
+
+.card-footer .btn {
+    width: 100%;
+}
+
+.badge {
+    color: #999;
+}
+
+.btn-group a .btn {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.btn-group a:hover {
+    text-decoration: none;
+}
+
+.schedule {
+    margin-top: 3rem;
+}
+
+.schedule .list-group-item {
+    justify-content: space-between;
+}
+
+.schedule img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.schedule .film {
+    flex: 1;
+    justify-content: space-between;
+    margin-right: 50px;
+    margin-left: 40px;
+    align-items: center;
+}
+
+.schedule .badge {
+    align-items: center;
+    display: flex;
+}
+
+.nav-pills .nav-link.active {
+    background-color: #343a40;
+}
+
+.nav-link {
+    color: #343a40;
+}
+
+.nav-link:hover {
+    color: #666;
+}
+
+.navbar-brand {
+    color: #17a2b8;
+}
+
+.jumbotron {
+    background-image: linear-gradient(rgba(255, 193, 7, 0.6), rgba(255, 193, 7, 0.6)),
+    url("../img/bg-image.jpg");
+    background-size: cover;
+
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+    .container {
+        max-width: inherit;
+    }
+}
+
+@media (max-width: 576px) {
+    .card-deck .card {
+        flex: 1 1 100%;
+    }
+
+    .card-deck {
+        margin-bottom: 0;
+    }
+
+    .card {
+        margin-bottom: 1rem;
+    }
+
+    .schedule .d-flex {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .schedule img {
+        margin: auto;
+    }
+
+    .schedule .badge {
+        flex-direction: column;
+    }
+
+    .jumbotron .btn-group > .btn:first-child:not(:last-child) {
+        border-top-right-radius: .3rem;
+        border-bottom-right-radius: .3rem;
+    }
+
+    .info h3 {
+        text-align: center;
+    }
+}
+
