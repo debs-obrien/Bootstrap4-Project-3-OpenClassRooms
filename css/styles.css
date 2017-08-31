@@ -114,6 +114,9 @@
         width: 100px;
         height: 100px;
     }
+    .btn-group-lg>.btn, .btn-lg{
+        font-size:1rem;
+    }
 }
 
 @media (min-width: 769px) {
