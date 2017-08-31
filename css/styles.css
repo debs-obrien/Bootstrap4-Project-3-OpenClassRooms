@@ -110,6 +110,10 @@
     .info h3 {
         text-align: center;
     }
+    .schedule img {
+        width: 100px;
+        height: 100px;
+    }
 }
 
 @media (min-width: 769px) {
