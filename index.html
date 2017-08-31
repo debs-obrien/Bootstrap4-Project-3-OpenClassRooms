@@ -50,7 +50,7 @@
                     Don't miss out - Register Now!!
                 </button>
                 <a href="#films">
-                    <button type="button" class="btn btn-dark btn-lg d-none d-sm-block" href="#films">See Films</button>
+                    <button type="button" class="btn btn-dark btn-lg d-none d-sm-block">See Films</button>
                 </a>
             </div>
         </div>
@@ -63,7 +63,7 @@
     <div class="info row mb-5">
         <div class="col-12 col-lg-4 order-lg-1 mb-5">
             <h3 class="mb-4">Outdoor Film Festival</h3>
-            <img src="img/bg-cinema.jpg" class="img-fluid rounded d-none d-sm-block mb-2" alt="Film Festival">
+            <img src="img/bg-cinema.jpg" class="img-fluid rounded d-none d-md-block mb-2" alt="Film Festival">
             <p>Outdoor Film Festival in the heart of Brookyln. Brooklyn Bridge Park this year from August 5th through
                 8th, from 6pm to midnight. Don't miss this amazing event</p>
         </div>
@@ -96,14 +96,15 @@
 
     <div class="card-deck mb-4">
         <div class="card">
-            <img class="card-img-top" src="img/captain-naweb.jpeg" alt="Card image cap">
+            <img class="card-img-top" src="img/captain-nawab.jpeg" alt="Card image cap">
             <div class="card-body">
 
-                <h4 class="card-title">Captain Naweb</h4>
-                <p class="card-text">Gripping film about Captian Naweb and all his crew aboard the ship.</p>
+                <h4 class="card-title">Captain Nawab</h4>
+                <p class="card-text">Gripping film about Captian Nawab and all his crew aboard the ship.</p>
             </div>
             <div class="card-footer">
-                <a href="#" class="btn btn-info mx-auto center-block">more info...</a>
+                <a href="#" class="btn btn-info mx-auto center-block" data-toggle="modal"
+                   data-target="#NawabModal">more info...</a>
             </div>
 
         </div>
@@ -116,7 +117,8 @@
                 <p class="card-text">How to kill a dragon is back with this great family movie.</p>
             </div>
             <div class="card-footer">
-                <a href="#" class="btn btn-info mx-auto center-block">more info...</a>
+                <a href="#" class="btn btn-info mx-auto center-block" data-toggle="modal"
+                   data-target="#DragonsModal">more info...</a>
             </div>
         </div>
 
@@ -128,7 +130,8 @@
                     heroes.</p>
             </div>
             <div class="card-footer">
-                <a href="#" class="btn btn-info mx-auto center-block">more info...</a>
+                <a href="#" class="btn btn-info mx-auto center-block" data-toggle="modal"
+                   data-target="#MarvelModal">more info...</a>
             </div>
         </div>
     </div>
@@ -141,7 +144,8 @@
                     survive.</p>
             </div>
             <div class="card-footer">
-                <a href="#" class="btn btn-info mx-auto center-block">more info...</a>
+                <a href="#" class="btn btn-info mx-auto center-block" data-toggle="modal"
+                   data-target="#MomModal">more info...</a>
             </div>
         </div>
 
@@ -153,7 +157,8 @@
                     around you.</p>
             </div>
             <div class="card-footer">
-                <a href="#" class="btn btn-info mx-auto center-block">more info...</a>
+                <a href="#" class="btn btn-info mx-auto center-block" data-toggle="modal"
+                   data-target="#NotebookModal">more info...</a>
             </div>
         </div>
         <div class="card">
@@ -165,7 +170,8 @@
 
             </div>
             <div class="card-footer">
-                <a href="#" class="btn btn-info mx-auto center-block">more info...</a>
+                <a href="#" class="btn btn-info mx-auto center-block" data-toggle="modal"
+                   data-target="#WW2Modal">more info...</a>
             </div>
         </div>
     </div>
@@ -182,9 +188,9 @@
                 <span class="badge badge-dark badge-pill">5 August 18:00</span>
             </li>
             <li class="list-group-item d-flex">
-                <img src="img/captain-naweb.jpeg" alt="Captain Naweb"/>
+                <img src="img/captain-nawab.jpeg" alt="Captain Nawab"/>
                 <div class="d-flex film">
-                    <h4 class="list-group-heading">Captain Naweb</h4>
+                    <h4 class="list-group-heading">Captain Nawab</h4>
                     <span>Drama</span>
                 </div>
                 <span class="badge badge-dark badge-pill">5 August 22:00</span>
@@ -318,7 +324,7 @@
                         <label for="film">Choose a Film</label>
                         <select class="form-control" id="film">
                             <option>Dragons</option>
-                            <option>Captain Naweb</option>
+                            <option>Captain Nawab</option>
                             <option>Marvel Adventures</option>
                             <option>Mom Teaser</option>
                             <option>The Notebook</option>
@@ -349,6 +355,155 @@
         </div>
     </div>
 </div>
+<!-- Modal Nawab -->
+<div class="modal fade" id="NawabModal" tabindex="-1" role="dialog" aria-labelledby="Register" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="infoNawabLabel">Captain Nawab</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="alert alert-info" role="alert">
+                    Recommended for all the family
+                </div>
+                <p>Nabab is a 2017 film directed by Joydeep Mukherjee and stars Bangladeshi film actor Shakib Khan. The film is an Indian-Bangladeshi joint venture produced by Abdul Aziz and Himanshu Dhanuka under the banner of Jaaz Multimedia and Eskay Movies.</p>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-danger" data-dismiss="modal" data-toggle="modal"
+                        data-target="#registerModal">Register</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal Dragons -->
+<div class="modal fade" id="DragonsModal" tabindex="-1" role="dialog" aria-labelledby="Register" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="infoDragonsLabel">Dragons</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="alert alert-info" role="alert">
+                    Recommended for all the family
+                </div>
+                <p>The story takes place in a mythical Viking world where a young Viking teenager named Hiccup aspires to follow his tribe's tradition of becoming a dragon slayer. After finally capturing his first dragon, and with his chance at last of gaining the tribe's acceptance, he finds that he no longer wants to kill the dragon and instead befriends it.</p>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-danger" data-dismiss="modal" data-toggle="modal"
+                        data-target="#registerModal">Register</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal Marvel Adventrues -->
+<div class="modal fade" id="MarvelModal" tabindex="-1" role="dialog" aria-labelledby="Register" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="infoMarvelLabel">Marvel Adventures</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="alert alert-info" role="alert">
+                    Recommended for all the family
+                </div>
+                <p>Are the Avengers ready to face off against Thanos? Well, they better be, because the Mad Titan (Josh Brolin) is coming, and he is just aching to get his hands on all of the mystical Infinity Stones - a collection of ingots that give tremendous power to those who can properly possess and contain them. This includes The Space Stone, The Power Stone, The Reality Stone, The Mind Stone, The Time Stone and The Soul Stone.</p>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-danger" data-dismiss="modal" data-toggle="modal"
+                        data-target="#registerModal">Register</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal Mom Teaser -->
+<div class="modal fade" id="MomModal" tabindex="-1" role="dialog" aria-labelledby="Register" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="infoMomLabel">Mom Teaser</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="alert alert-info" role="alert">
+                    Recommended for grown ups
+                </div>
+                <p>Mom is a 2017 Indian thriller film directed by Ravi Udyawar. Produced by Boney Kapoor, Sunil Manchanda, Mukesh Talreja, Naresh Agarwal and Gautam Jain,[2][4] the film stars Sridevi, as a vigilante, who sets out to avenge her daughter, played by Sajal Ali. Adnan Siddiqui. Akshaye Khanna and Nawazuddin Siddiqui play supporting roles in the film.[5][6] Music for the film has been produced by A. R. Rahman.[</p>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-danger" data-dismiss="modal" data-toggle="modal"
+                        data-target="#registerModal">Register</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal The Notebook -->
+<div class="modal fade" id="NotebookModal" tabindex="-1" role="dialog" aria-labelledby="Register" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="infoNotebookLabel">The Notebook </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="alert alert-info" role="alert">
+                    Recommended for those who love to love
+                </div>
+                <p>The Notebook is a 2004 American romantic drama film directed by Nick Cassavetes and based on the 1996 novel of the same name by Nicholas Sparks. The film stars Ryan Gosling and Rachel McAdams as a young couple who fall in love in the 1940s. Their story is narrated from the present day by an elderly man (portrayed by James Garner) telling the tale to a fellow nursing home resident (played by Gena Rowlands, who is Cassavetes's mother).</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-danger" data-dismiss="modal" data-toggle="modal"
+                        data-target="#registerModal">Register</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal World War 2 -->
+<div class="modal fade" id="WW2Modal" tabindex="-1" role="dialog" aria-labelledby="Register" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="infoWW2Label">World War 2</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="alert alert-info" role="alert">
+                    Family Excitement but a little scary
+                </div>
+                <p>World War Z is a 2013 American action horror film directed by Marc Forster. The screenplay by Matthew Michael Carnahan, Drew Goddard, and Damon Lindelof is from a screen story by Carnahan and J. Michael Straczynski, based on the title of the 2006 novel of the same name by Max Brooks. The film stars Brad Pitt as Gerry Lane, a former United Nations investigator who must travel the world to find a way to stop a zombie pandemic.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-danger" data-dismiss="modal" data-toggle="modal"
+                        data-target="#registerModal">Register</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"

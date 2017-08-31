@@ -3,10 +3,6 @@
     cursor: pointer;
 }
 
-.card-img-top {
-    max-height: 144px;
-}
-
 .card-footer .btn {
     width: 100%;
 }
@@ -115,4 +111,16 @@
         text-align: center;
     }
 }
+
+@media (min-width: 769px) {
+    .card-img-top {
+        height: 144px;
+    }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+    .card-img-top {
+        height: 100px;
+    }
+}
+
 
